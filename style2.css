@@ -1,1 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+.card_header h1, p{
+    text-align: center;
+    line-height: 2.5rem;
+}
+.card_header{
+    margin: 2.5rem;
+}
+main{
+    display: grid;
+    
+    grid-template-columns: repeat(1,1fr);
+    gap: 1.2rem;
+}
+@media (min-width:600px){
+    main{
+        
+        
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.2rem;
+    }
+}
+@media (min-width:900px){
+    main{
+        
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.2rem;
+    }
+}
+@media (min-width:1300px){
+    main{
+        
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.2rem;
+    }
+}
+   
+.card{
+    border: 1px solid rgb(194, 191, 191);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card_image_container{
+    overflow: hidden;
+}
+.card_img{
+    height: 13rem;
+    width: 100%;
+}
+.card_img:hover{
+    transform:scale(1.2);
+    transition-duration: 1s;
+}
+.avtor_img{
+    height: 2rem;
+    border: 1px solid rgb(235, 233, 233);
+    border-radius: 50%;
+    background-color: rgb(249, 246, 246);
+}
+.red{
+    color:red;
+}
+.card_info{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+}
+.card_info a{
+    font-weight: bold;
+}
+.card_info p{
+    line-height: 1rem;
+    text-align: start;
+    color: rgb(92, 90, 90);
+}
+.card_footer{
+    display: flex;
+    justify-content: space-around;
+    color: rgb(87, 86, 86);
+}
+.author{
+    display: flex;
+    gap: .3rem;
+}
+.author_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.tag_container span{
+    border: 1px solid rgb(141, 138, 138);
+}
 
